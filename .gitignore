@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.env
+GraphOne_Data_Output.xlsx
+.pytest_cache/
+*.db
