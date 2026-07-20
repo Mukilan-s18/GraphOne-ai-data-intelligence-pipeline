@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: graphone-pipeline-api
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: ohio
+    branch: main
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: DEEPSEEK_API_KEY
+        sync: false
