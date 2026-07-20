@@ -35,6 +35,6 @@ jobs:
 
     - name: Run unit tests with pytest
       env:
-        PYTHONPATH: ${{ github.workspace }}/src
+        PYTHONPATH: ${{ github.workspace }}
       run: |
         pytest tests/ -v
