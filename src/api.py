@@ -8,7 +8,7 @@ import logging
 # Ensure src is in PYTHONPATH when running via uvicorn
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.main import main as run_pipeline
+from src.main import run_pipeline
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
